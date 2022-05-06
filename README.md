@@ -8,3 +8,7 @@
 ## Add Dbset in DbContext
 ## Add relationship and constrait of entities
 ## Add Migration to render DB 
+## Add model in Application.Contract
+## Add AppIService in Application.Contract
+## Add AppService in Application
+## Add menu and view in Web

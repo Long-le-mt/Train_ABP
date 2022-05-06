@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Acme.BookStore.Application.Contracts.Models.BoPhan
+namespace Acme.BookStore.Models.BoPhan
 {
     public class BoPhanRequest
     {

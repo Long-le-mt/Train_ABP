@@ -1,12 +1,12 @@
 using System;
-using Acme.BookStore.Application.Contracts.Models.BoPhan;
-using Acme.BookStore.Application.Contracts.Services;
 using Acme.BookStore.Entities;
+using Acme.BookStore.Models.BoPhan;
+using Acme.BookStore.Services;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
-namespace Acme.BookStore.Application.Commons
+namespace Acme.BookStore.Commons
 {
     public class BoPhanAppService :
         CrudAppService<BoPhan,

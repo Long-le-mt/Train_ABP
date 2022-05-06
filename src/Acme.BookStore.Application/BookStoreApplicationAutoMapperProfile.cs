@@ -1,5 +1,5 @@
-﻿using Acme.BookStore.Application.Contracts.Models.BoPhan;
-using Acme.BookStore.Application.Contracts.Models.NhanVien;
+﻿using Acme.BookStore.Models.BoPhan;
+using Acme.BookStore.Models.NhanVien;
 using Acme.BookStore.Entities;
 using AutoMapper;
 

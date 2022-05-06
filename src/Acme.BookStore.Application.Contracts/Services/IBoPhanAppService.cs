@@ -1,9 +1,9 @@
+using Acme.BookStore.Models.BoPhan;
 using System;
-using Acme.BookStore.Application.Contracts.Models.BoPhan;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
-namespace Acme.BookStore.Application.Contracts.Services
+namespace Acme.BookStore.Services
 {
     public interface IBoPhanAppService : 
         ICrudAppService<

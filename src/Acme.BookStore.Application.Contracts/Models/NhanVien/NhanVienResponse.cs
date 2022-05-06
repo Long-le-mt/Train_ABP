@@ -1,7 +1,7 @@
 using System;
 using Volo.Abp.Application.Dtos;
 
-namespace Acme.BookStore.Application.Contracts.Models.NhanVien
+namespace Acme.BookStore.Models.NhanVien
 {
     public class NhanVienResponse : EntityDto<Guid>
     {

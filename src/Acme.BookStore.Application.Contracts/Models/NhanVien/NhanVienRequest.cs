@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Acme.BookStore.Application.Contracts.Models.NhanVien
+namespace Acme.BookStore.Models.NhanVien
 {
     public class NhanVienRequest
     {

@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Acme.BookStore.Localization;
 using Acme.BookStore.MultiTenancy;
+using Acme.BookStore.Permissions;
 using Volo.Abp.Identity.Web.Navigation;
 using Volo.Abp.SettingManagement.Web.Navigation;
 using Volo.Abp.TenantManagement.Web.Navigation;
@@ -33,7 +34,21 @@ namespace Acme.BookStore.Web.Menus
                     order: 0
                 )
             );
-            
+            context.Menu.AddItem(new ApplicationMenuItem("TongQuan", "Tổng quan", icon: "fa fa-circle", order: 1, url: "/#"));
+
+            var boPhan = await context.IsGrantedAsync(BookStorePermissions.BoPhan.Default);
+            if (boPhan)
+            {
+                context.Menu.AddItem(new ApplicationMenuItem("BoPhan", "Bộ phận", icon: "fa fa-circle", order: 2, url: "/Commons/BoPhan"));
+            }
+
+
+            var nhanVien = await context.IsGrantedAsync(BookStorePermissions.NhanVien.Default);
+            if (boPhan)
+            {
+                context.Menu.AddItem(new ApplicationMenuItem("NhanVien", "Nhân viên", icon: "fa fa-users", order: 3, url: "/Commons/NhanVien"));
+            }
+
             if (MultiTenancyConsts.IsEnabled)
             {
                 administration.SetSubItemOrder(TenantManagementMenuNames.GroupName, 1);
